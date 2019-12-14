@@ -1,0 +1,4 @@
+Pfeffer	1 Stück	3.49	2.79	Resources/images/pfeffer__600x600.jpg	Schwarzer Pfeffer verleiht Ihren Speisen eine pikante Schärfe, besonders wenn er länger mitgekocht wird.
+Schafmilchkäse	200 Gramm Packung	2.59	1.99	Resources/images/cheese_salakis__600x600.jpg	Hier gibt es keine Beschreibung, weil unsere Handelskette kennst sich nur bedingt damit aus, wie man eine Werbebeschreibung schreibt.
+Vöslauer	1.5 Liter Flasche	0.75	0.49	Resources/images/voslauer__600x600.jpg	Spritziges Vöslauer Mineralwasser.
+Zucker	500 Gramm Paket	1.39	0.89	Resources/images/zucker__600x600.jpg	Natürliches Gelieren wird durch Apfelpektin unterstützt, welches im richtigen Verhältnis mit Zitronensäure und Kristallzucker abgemischt wurde.

@@ -1,18 +1,21 @@
-package foodSale;
+package com.sebastian.foodSale;
 
 public class Product {
+
     private String name;
     private String amount;
-    private int oldPrice;
-    private int newPrice;
+    private double oldPrice;
+    private double newPrice;
     private String imgPath;
+    private String description;
 
-    public Product(String name, String amount, int oldPrice, int newPrice, String imgPath) {
+    public Product(String name, String amount, double oldPrice, double newPrice, String imgPath, String description) {
         this.name = name;
         this.amount = amount;
         this.oldPrice = oldPrice;
         this.newPrice = newPrice;
         this.imgPath = imgPath;
+        this.description = description;
     }
 
     public String getName() {
@@ -23,6 +26,14 @@ public class Product {
         this.name = name;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public String getAmount() {
         return amount;
     }
@@ -31,19 +42,19 @@ public class Product {
         this.amount = amount;
     }
 
-    public int getOldPrice() {
+    public double getOldPrice() {
         return oldPrice;
     }
 
-    public void setOldPrice(int oldPrice) {
+    public void setOldPrice(double oldPrice) {
         this.oldPrice = oldPrice;
     }
 
-    public int getNewPrice() {
+    public double getNewPrice() {
         return newPrice;
     }
 
-    public void setNewPrice(int newPrice) {
+    public void setNewPrice(double newPrice) {
         this.newPrice = newPrice;
     }
 
@@ -53,5 +64,12 @@ public class Product {
 
     public void setImgPath(String imgPath) {
         this.imgPath = imgPath;
+    }
+
+    @Override
+    public String toString() {
+        return "{ " + "\'" + name + '\'' +
+                ", oldPrice=" + oldPrice +
+                ", newPrice=" + newPrice + " }";
     }
 }

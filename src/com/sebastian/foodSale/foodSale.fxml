@@ -1,0 +1,72 @@
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<BorderPane fx:controller="com.sebastian.foodSale.Controller"
+            xmlns:fx="http://javafx.com/fxml" styleClass="mainBorderPane">
+    <padding>
+        <Insets top="20" left="10" right="10" bottom="20"/>
+    </padding>
+    <left>
+        <GridPane hgap="7" vgap="7">
+
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.halignment="RIGHT" text="Product Name: "/>
+            <TextField fx:id="name" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.halignment="RIGHT"
+                       editable="false"/>
+
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.halignment="RIGHT" text="Amount: "/>
+            <TextField fx:id="amount" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.halignment="RIGHT"
+                       editable="false"/>
+
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.halignment="RIGHT" text="Old Price: "/>
+            <HBox GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2">
+                <TextField fx:id="oldPrice"/>
+                <Label text="EUR">
+                    <padding>
+                        <Insets top="5" left="3"/>
+                    </padding>
+                </Label>
+            </HBox>
+
+            <Label GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.halignment="RIGHT" text="New Price: "/>
+            <HBox GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="2">
+                <TextField fx:id="newPrice"/>
+                <Label text="EUR">
+                    <padding>
+                        <Insets top="5" left="3"/>
+                    </padding>
+                </Label>
+            </HBox>
+            <HBox GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.columnSpan="2" alignment="CENTER">
+                <Button text="Update" fx:id="updateBtn" disable="true"/>
+                <Button text="Print report.txt" fx:id="reportBtn"/>
+
+            </HBox>
+
+        </GridPane>
+    </left>
+
+    <center>
+        <VBox maxWidth="300">
+            <padding>
+                <Insets top="4" left="2" bottom="4" right="4"/>
+            </padding>
+            <HBox alignment="CENTER">
+                <padding>
+                    <Insets bottom="15"/>
+                </padding>
+                <ImageView fx:id="productImage" fitHeight="300" fitWidth="300"/>
+            </HBox>
+            <TextArea fx:id="productDescription" wrapText="true" styleClass="productDescription"/>
+        </VBox>
+    </center>
+
+    <right>
+        <VBox>
+            <padding>
+                <Insets right="10" left="15"/>
+            </padding>
+            <ListView fx:id="productListView" prefWidth="300" styleClass="listView"/>
+        </VBox>
+    </right>
+</BorderPane>

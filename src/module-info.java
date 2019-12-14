@@ -1,6 +1,6 @@
-module WF.SebastianMalcher.Java.CodeReview04 {
+module foodSale {
     requires javafx.fxml;
     requires javafx.controls;
 
-    opens foodSale;
+    opens com.sebastian.foodSale;
 }

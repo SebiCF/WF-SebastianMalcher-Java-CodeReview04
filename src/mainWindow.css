@@ -1,0 +1,56 @@
+.mainBorderPane {
+    -fx-background-color: linear-gradient(to right, rgba(228, 228, 228, 0.55), rgba(70, 70, 70, 0.45));
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 1, 1, 1);
+}
+
+.listView {
+    -fx-background-color: linear-gradient(to right, rgba(120, 120, 120, 0.3), rgba(200, 200, 200, 1));
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-border-radius: 3;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 1, 1, 1);
+}
+
+.listView .list-cell:odd {
+    -fx-background-color: linear-gradient(to left, rgba(120, 120, 120, 0.3), rgba(200, 200, 200, 1));
+}
+
+.listView .list-cell:even {
+    -fx-background-color: linear-gradient(to left, rgba(120, 120, 120, 0.3), rgba(200, 200, 200, 1));
+}
+
+.listView .list-cell:selected {
+    -fx-background-color: #0893ff;
+}
+
+.productDescription {
+    -fx-background-color: transparent;
+    -fx-font-size: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 1, 1, 1);
+
+}
+
+.text-area {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .content {
+    -fx-background-color: transparent;
+}
+
+.text-field {
+    -fx-font-size: 14;
+}
+
+.label {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 1, 0.7, 1, 1);
+    -fx-font-size: 14;
+}
